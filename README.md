@@ -18,3 +18,10 @@ The pipeline integrates:
 * Extreme-change detection
 
 * Case studies for stable vs volatile users
+
+## Technologies
+* Python 3.10.14
+
+## Installation
+* [Mental-RoBERTa](https://huggingface.co/mental/mental-roberta-base)
+* [NRC-VAD Lexicon](https://saifmohammad.com/WebPages/nrc-vad.html) or other lexicon
