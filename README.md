@@ -5,7 +5,7 @@ The work explores how linguistic signals, temporal emotional trajectories, and L
 
 The pipeline integrates:
 
-* LLM-based emotion and symptom extraction (RoBERTa / Empath / custom V-A weights)
+* Scraping
 
 * Circumplex emotion mapping
 
@@ -25,3 +25,8 @@ The pipeline integrates:
 ## Installation
 * [Mental-RoBERTa](https://huggingface.co/mental/mental-roberta-base)
 * [NRC-VAD Lexicon](https://saifmohammad.com/WebPages/nrc-vad.html) or other lexicon
+```
+pip install selenium
+pip install empath
+
+```
