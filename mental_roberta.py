@@ -224,15 +224,11 @@ def train_mlp_return_preds(X_tr, Y_tr, X_va, Y_va, X_te, cfg: MLPConfig):
 
 # Metrics & diagnostics
 def _to_np(x):
-    import numpy as np, torch
     if isinstance(x, torch.Tensor):
         return x.detach().cpu().numpy()
     return np.asarray(x)
 
 def metrics_dict(y_true, y_pred):
-    import numpy as np
-    from sklearn.metrics import mean_absolute_error
-    from scipy.stats import pearsonr, spearmanr
 
     y_true = _to_np(y_true)
     y_pred = _to_np(y_pred)
@@ -252,7 +248,6 @@ def metrics_dict(y_true, y_pred):
     return out
 
 def calibration(y_true, y_pred):
-    import numpy as np
     from scipy.stats import linregress
 
     y_true = _to_np(y_true)
